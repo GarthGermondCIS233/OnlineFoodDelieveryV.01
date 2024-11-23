@@ -57,4 +57,14 @@ public class Customer extends Person {
    public List<Order> getOrderHistory() {
       return new ArrayList<>(orderHistory);
    }
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", phone='" + phone + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }
