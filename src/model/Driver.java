@@ -169,4 +169,18 @@ public class Driver extends Person {
    public static Driver getDriverById(Long driverId) {
       return Driver.getDriverById(driverId);
    }
+   @override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", phone='" + phone + '\'' +
+                ", email='" + email + '\'' +
+               ", license plate='" + licenseNumber + '\'' +
+               ", location='" + currentLocation.getAddress() + '\'' +
+               ", order='" + currentOrder.getOrderId() + '\'' +
+               ", Available='" + isAvalable + ''\' +
+                '}';
+    }
 }
